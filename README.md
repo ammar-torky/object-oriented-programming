@@ -1,3 +1,12 @@
+# Resources:
+## [OOP in Arabic - #0 Introduction (youtube.com)](https://www.youtube.com/playlist?list=PLwWuxCLlF_ue7GPvoG_Ko1x43tZw5cz9v)
+## [Python Object Oriented Programming - شرح للبرمجة كائنية التوجه في بايثون - YouTube](https://www.youtube.com/watch?v=A9kSngn7254&t=6633s)
+
+<h1 align="center">
+  --- Explanation ---
+  <br>
+</h1>
+
 #  Constructor :
 - الattributes  الخاصة بالكونستركتور بتكون داخل الكونستركتور واسمها  instance attributes اما ف نوع تاني اسمه class attributes ودي اللي بتبقي خارج الكونستركتور لو تفتكتر فال ++c كنا بنعرفها داخل الprivate access modifier 
 - # Attributes:
