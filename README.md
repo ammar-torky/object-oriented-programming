@@ -4,7 +4,6 @@
 
 <h1 align="center">
   --- Explanation ---
-  <br>
 </h1>
 
 #  Constructor :
