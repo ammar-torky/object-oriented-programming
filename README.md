@@ -79,16 +79,18 @@ gender is : Male
 #instance_method
 - أول متغير هو ال self وبيشاور عالاوبجكت اللي هتنسخه من الكلاس 
 ```python
-class human :
-    def __init__(self , first_name ,last_name , age):# this is the consturctor
-        self.first_name = first_name
-        self.last_name = last_name
-        self.age = age
-        
+class Human:
+    def __init__(self, first_name, last_name, age):  # This is the constructor
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
     def info_function(self):
-	    return f'Hello,{self.first_name} {self.last_name} ...your age is {self.age}'
-#self refer to to object data
-person1 = human('Ammar','Yasser',21) # take object from class human with these attributes
+        return f'Hello, {self.first_name} {self.last_name} ... your age is {self.age}'
+        # self refers to the object's data
+
+# Creating an object from the class Human with these attributes
+person1 = Human('Ammar', 'Yasser', 21)
 print(person1.info_function())
 ##############################
 ##############################
