@@ -112,43 +112,48 @@ print(person1.info_function())
 - تستخدم في حالة انك عايز تعمل حاجة بسيطة فالكلاس بدون انك تأكسس الكلاس ولا instance
 - بتحط قبلها decorator اسمه staticmethod@
 - In general, static methods know nothing about the class state. They are utility-type methods that take some parameters and work upon those parameters. On the other hand class methods must have class as a parameter.
-- من الاخر كدا هي زي  اي فنكشن عادية بتنكتب برا الكلاس بس اول ما بتنكتب جو الكلاس لاستخدام بسيط مثلا  بييبقي اسمها كدا
+- من الاخر كدا هي زي  اي فنكشن عادية بتنكتب برا الكلاس بس اول ما بتنكتب جو الكلاس لاستخدام بسيط مثلا... فبييبقي اسمها كدا
+
 Examples on both
 ```python
 # class
-class Third_year_Students :
-    faculity = 'FCI'
-    grade = 'Grade 3'
+# Class definition
+class ThirdYearStudents:
+    faculty = 'FCI'
+    grade = 'Grade 3'
 
-    def __init__(self, name, age, gender):
-        self.name=name
-        self.age=age
-        self.gender=gender
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
 
-    def info_about_person(self):
-        print(f"name :{self.name} \nage : {self.age} \ngender :{self.gender}")
+    def info_about_person(self):
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Gender: {self.gender}")
 
-    @classmethod    
-    def info_about_student(cls,obj):
-        print(f"faculity : {cls.faculity} \ngrade : {cls.grade}")
-        obj.info_about_person()
+    @classmethod
+    def info_about_student(cls, obj):
+        print(f"Faculty: {cls.faculty}")
+        print(f"Grade: {cls.grade}")
+        obj.info_about_person()
 
-ob1 = Third_year_Students('Ammar',21,'Male')
-ob2 = Third_year_Students('Mohamed',21,'Male')
+# Creating objects
+student1 = ThirdYearStudents('Ammar', 21, 'Male')
+student2 = ThirdYearStudents('Mohamed', 21, 'Male')
 
-
-ob1.info_about_person()
+# Displaying information
+student1.info_about_person()
 print()
-ob1.info_about_student(ob1)
-print()
-
-print("-" * 40  , '\n')
-
-ob2.info_about_person()
-print()
-ob2.info_about_student(ob2)
+student1.info_about_student(student1)
 print()
 
+print("-" * 40, '\n')
+
+student2.info_about_person()
+print()
+student2.info_about_student(student2)
+print()
 ```
 
 # Magic(Dunder) Method
