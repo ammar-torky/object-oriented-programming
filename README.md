@@ -30,27 +30,28 @@ person2 = human('mostafa','Gad',21)
 #class_attributes
 ```python
 class FCI_Student:
-    faculity = 'FCI_MU'
-    grade = "grade 3"
+    faculty = 'FCI_MU'
+    grade = "Grade 3"
 
-    def __init__(self,name,age,gen):
-        self.name = name
-        self.age = age
-        self.gender = gen
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
 
-    def full_info(self):
-        print(f'faculity is : {FCI_Student.faculity}')
-        print(f'Grade is : {FCI_Student.grade}')
-        print(f'name is : {self.name} ')
-        print(f'Age is : {self.age}')
-        print(f'gender is : {self.gender}')
+    def full_info(self):
+        print(f'Faculty is: {FCI_Student.faculty}')
+        print(f'Grade is: {FCI_Student.grade}')
+        print(f'Name is: {self.name}')
+        print(f'Age is: {self.age}')
+        print(f'Gender is: {self.gender}')
 
-student1 = FCI_Student('Ammar',21,'Male')
+# Creating instances of FCI_Student
+student1 = FCI_Student('Ammar', 21, 'Male')
 student1.full_info()
 
 print('-' * 40)
 
-student2 = FCI_Student('Ahmed',21,'Male')
+student2 = FCI_Student('Ahmed', 21, 'Male')
 student2.full_info()
 ##############################
 """           
